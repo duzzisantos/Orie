@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="orie.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Orie - Aba's Online Yellow Pages</title>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">ORIE<i class="fas fa-shopping-cart"></i></label>
+        <ul class="nav-links">
+            <li><a href="orie.html">Home</a></li>
+            <li><a href="orie-vendors.html">Vendors</a></li>
+            <li><a href="orie-market.html">Markets</a></li>
+            <li><a href="orie-events.html">Events</a></li>
+            <li><a href="orie-category.html">Category</a></li>
+            <li><a href="orie-register.html">Register</a></li>
+        </ul>
+    </nav>
+
+
+    <main class="row">
+        <div id="boxes">
+            <div id="market1"></div>
+            <hr>
+            <div id="describe">
+                <h5>ARIARIA</h5>
+                <p>Ariaria is one of the biggest markets in Nigeria. It sells within and outside Nigeria.</p>
+                <button id="readMore"><i class="fab fa-readme"></i></button>
+                <button id="location"><i class="fas fa-map-marker-alt"></i></button>
+            </div>
+        </div>
+        <div id="boxes">
+            <div id="market2"></div>
+            <hr>
+            <div id="describe">
+                <h5>EKEOHA</h5>
+                <p>Ekeoha is one of the biggest markets in Aba. It was the first ever built.</p>
+                <button id="readMore"><i class="fab fa-readme"></i></button>
+                <button id="location"><i class="fas fa-map-marker-alt"></i></button>
+            </div>
+        </div>
+        <div id="boxes">
+            <div id="market3"></div>
+            <hr>
+            <div id="describe">
+                <h5>AHIA OHURU</h5>
+                <p>Ahia Ohuru is one of the biggest markets in Aba. It deals with multi-purpose articles.</p>
+                <button id="readMore"><i class="fab fa-readme"></i></button>
+                <button id="location"><i class="fas fa-map-marker-alt"></i></button>
+            </div>
+        </div>
+        <div id="boxes">
+            <div id="market4"></div>
+            <hr>
+            <div id="describe">
+                <h5>CEMETARY</h5>
+                <p>Cemetary Market is one of the biggest markets in Aba. It sells within Abia State.</p>
+                <button id="readMore"><i class="fab fa-readme"></i></button>
+                <button id="location"><i class="fas fa-map-marker-alt"></i></button>
+            </div>
+        </div>
+        <div id="boxes">
+            <div id="market5"></div>
+            <hr>
+            <div id="describe">
+                <h5>ASANNETU</h5>
+                <p>Asannetu is one of the biggest markets in Aba. It sells automobile accessories.</p>
+                <button id="readMore"><i class="fab fa-readme"></i></button>
+                <button id="location"><i class="fas fa-map-marker-alt"></i></button>
+            </div>
+        </div>
+    </main>
+
+    <section class="container">
+        <menu>
+            <button id="myButton">Subscribe to Newsletter</button>
+        </menu>
+        <!-- <output aria-live="assertive"></output> -->
+        <dialog id="myDialog">
+            <button id="shut">X</button>
+            <h3>Sign Up Today!</h3>
+            <form method="dialog">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+                <button id="submit">Submit</button>
+            </form>
+        </dialog>
+    </section>
+    <div id="info">
+        <h2>Start searching for a vendor.</h2>
+        <h4>Search by business name or vendor name.</h4>
+        <input type="text" id="vendorSearch"><button id="searchBtn"><i class="fas fa-search"></i> SEARCH</button>
+    </div>
+
+    <div id="info2">
+        <h2>Buy your dream shop today!</h2>
+        <h4>Search market, apply, and get feedback.</h4>
+        <input type="text" id="shopSearch"><button id="shopBtn"><i class="fas fa-search"></i> SEARCH</button>
+        <!-- <select name="market" id="selMarket">
+            <option value="select">Select</option>
+            <option value="ariaria">Ariaria</option>
+            <option value="ekeoha">Ekeoha</option>
+            <option value="ohuru">Ahia Ohuru</option>
+            <option value="cemetary">Cemetary</option>
+            <option value="nnetu">Asannetu</option>
+        </select> -->
+
+    </div>
+
+    <div id="info3">
+        <h2>Register your shop with the state!</h2>
+        <h4>Be a registered trader in Abia State.</h4>
+        <form action="">
+            <label for="bizname">Business Name</label>
+            <input type="text" name="bizname" id="bizname">
+            <label for="mail">Email Address</label>
+            <input type="text" name="email" id="mailAdd">
+            <button id="abia">Start</button>
+
+        </form>
+    </div>
+
+</body>
+<script src="orie.js"></script>
+
+</html>

@@ -1,0 +1,196 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #042A2B;
+    background-image: linear-gradient(to right, #042A2B, crimson);
+    color: blanchedalmond;
+}
+
+/** THE NAVBAR **/
+
+nav {
+    height: 100px;
+    background-color: none;
+    margin-bottom: 35px;
+    width: 100%;
+    /*change made here*/
+    display: inline-block;
+    z-index: 1;
+    top: 0px;
+    position: fixed;
+    background-image: linear-gradient(to right, #042a2b, crimson);
+}
+
+label.logo {
+    color: white;
+    font-size: 50px;
+    line-height: 80px;
+    font-weight: 700;
+    margin-left: 30px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 45px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+    margin-top: -10px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 24px;
+    text-decoration-line: none;
+}
+
+nav ul li a:hover {
+    color: #93cbcee8;
+    background: none;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/*COLLAPSIBLE NAVBAR*/
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 40px;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 856px) {
+    .checkbtn {
+        display: block;
+    }
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #042A2B;
+        background-image: linear-gradient(to right, #042A2B, #044A4B);
+        top: 80px;
+        left: -150%;
+        text-align: center;
+        transition: all .5s;
+        display: block;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover, a.active {
+        background: none;
+        color: #a7acaf;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+    label.logo {
+        margin-left: 0;
+    }
+}
+
+h1 {
+    text-align: left;
+    font-size: 50px;
+    margin-left: 25px;
+    display: inline-block;
+}
+#myButton {
+    background-color: crimson;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    margin-left: 520px;
+    background-image: none;
+    font-size: 18px;
+    color: blanchedalmond;
+    margin-bottom: 25px;
+}
+
+#myButton:hover {
+    background-color: blanchedalmond;
+    color: #042A2B;
+}
+
+
+h2 {
+    text-align: center;
+    font-size: 60px;
+}
+
+#searchBar{
+    height: 400px;
+    width: 100%;
+    padding-top: 150px;
+}
+#vendorSearch {
+    padding: 21px;
+    width: 500px;
+    text-indent: 5px;
+    background-color: white;
+    border: 2px solid #042A2B;
+    display: inline-block;
+    margin: 0;
+    border-radius: none;
+    margin-left: 300px;
+    margin-top: 20px;
+    color: #042A2B;
+    font-size: 30px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+ #shopBtn {
+    padding: 30px;
+    padding-bottom: 25px;
+    padding-top: 32px;
+    width: 200px;
+    background-color: #042A2B;
+    display: inline-block;
+    margin: 0;
+    border: none;
+    color: white;
+    font-size: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid crimson; /* Blue */
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    animation: spin 2s linear infinite;
+    margin-top: 40px;
+    margin-left: 600px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

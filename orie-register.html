@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="orie-register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Orie - Aba's Online Yellow Pages</title>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">ORIE<i class="fas fa-shopping-cart"></i></label>
+        <ul class="nav-links">
+            <li><a href="orie.html">Home</a></li>
+            <li><a href="orie-vendors.html">Vendors</a></li>
+            <li><a href="orie-market.html">Markets</a></li>
+            <li><a href="orie-events.html">Events</a></li>
+            <li><a href="orie-category.html">Category</a></li>
+            <li><a href="orie-register.html">Register</a></li>
+        </ul>
+    </nav>
+
+    <div class="row">
+        <h3>Register your business today!</h3>
+        <form action>
+            <label for="name">Full Name:</label>
+            <input type="text" name="name" id="name"/>
+            <label for="company">Company name:</label>
+            <input type="text" name="company" id="company"/>
+            <label for="shop address">Shop address:</label>
+            <input type="text" name="shop" id="shop"/>
+
+            <select name="market" id="market">
+                <option value="select" default>--Select Market--</option>
+                <option value="ariaria"/>Ariaria</option>
+                <option value="ekeoha"/>Ekeoha</option>
+                <option value="ahia ohuru"/>Ahia Ohuru</option>
+                <option value="cemetary"/>Cemetary</option>
+                <option value="asannetu"/>Asannetu</option>
+            </select>
+
+            <select name="product" id="product">
+                <option value="select" default>--Select Product Category--</option>
+                <option value="provisions"/>Provisions</option>
+                <option value="beverages"/>Beverages</option>
+                <option value="building"/>Building Materials</option>
+                <option value="spare parts"/>Spare Parts</option>
+                <option value="fresh food"/>Fresh Food Stuff</option>
+                <option value="dry food"/>Dry Food</option>
+                <option value="shoes"/>Shoes</option>
+                <option value="clothing"/>Clothing</option>
+                <option value="clothing materials"/>Clothing Materials</option>
+                <option value="electronics"/>Electronics</option>
+                <option value="ok"/>Okirika</option>
+                <option value="household"/>Household Items</option>
+                <option value="furniture"/>Furniture</option>
+            </select>
+
+            <label for="email">Email address:</label>
+            <input type="text" name="email" id="email"/>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password"/>
+            <label for="phone">Phone number:</label>
+            <input type="text" name="phone" id="phone"/>
+            <button id="register">Register</button>
+        </form>
+    </div>
+
+</body>
+<script src="orie.js"></script>
+<script src="orie-forms.js"></script>
+
+</html>
